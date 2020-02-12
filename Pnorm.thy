@@ -6,8 +6,6 @@ section \<open>p-adic valuation and p-adic norm\<close>
 theory Pnorm
 
 imports 
-  Complex_Main 
-  "HOL-ex.Sketch_and_Explore"
   "Probabilistic_Prime_Tests.Fermat_Witness"
 
 begin
