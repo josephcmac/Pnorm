@@ -1,6 +1,6 @@
 chapter AFP
 
-session Arith_Prog_Rel_Primes (AFP) = "HOL-Algebra" + 
+session Pnorm (AFP) = "HOL-Algebra" + 
   options [timeout = 300]
   sessions
     Probabilistic_Prime_Tests
