@@ -2,6 +2,7 @@
   File:    Pnorm.thy 
   Author:  Jose Manuel Rodriguez Caballero, University of Tartu
   Author:  Manuel Eberl, TU München
+
 *)
 section \<open>p-adic valuation and p-adic norm\<close>
 theory Pnorm

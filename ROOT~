@@ -1,10 +1,11 @@
 chapter AFP
 
-session Pnorm (AFP) = "HOL-Number_Theory" + 
+session Pnorm (AFP) = "HOL-Algebra" + 
   options [timeout = 300]
+  sessions
+    Probabilistic_Prime_Tests
   theories
     Pnorm
-    Harmonic_2_adic
   document_files
     "root.tex"
     "root.bib"
