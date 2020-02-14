@@ -67,10 +67,13 @@ lemma multiplicity_minus_left [simp]:
   using multiplicity_times_unit_left[of "-1" a b] by simp
 
 
-definition intpow :: "'a :: {inverse, power} \<Rightarrow> int \<Rightarrow> 'a" where
+definition intpow :: "'a :: {inverse, power} \<Rightarrow> int \<Rightarrow> 'a" where 
   "intpow x n = (if n \<ge> 0 then x ^ nat n else inverse x ^ (nat (-n)))"
 
-lemma intpow_int [simp]: "intpow x (int n) = x ^ n"
+(* The option to the user to use the same notation as powr *)
+notation intpow  (infixr "powi" 80)
+
+lemma intpow_int [simp]: " x powi (int n) = x ^ n"
   by (simp add: intpow_def)
 
 lemma intpow_minus [simp]: "intpow (x :: 'a :: field) (-int n) = inverse (intpow x n)"
